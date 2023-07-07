@@ -8,7 +8,7 @@ describe('Greet', () => {
     fit('renders correctly', () => {
         // fit - focus on a particular test
         render(<Greet />);
-        const textElement = screen.getByText('Hello');
+        const textElement = screen.getByText(/Hello/);
         expect(textElement).toBeInTheDocument();
     });
 
